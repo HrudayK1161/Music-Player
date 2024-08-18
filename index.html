@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="artists">
+            <!-- Artist and Song list will be dynamically generated -->
+        </div>
+        <div class="player">
+            <div class="album-cover">
+                <img id="cover" src="cover_art/default-cover.jpg" alt="Album Cover">
+            </div>
+            <div class="info">
+                <div id="title">Title</div>
+                <div id="artist">Artist</div>
+            </div>
+            <div class="controls-container">
+                <div class="time-controls">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="time-bar" value="0">
+                    <span id="duration">0:00</span>
+                </div>
+                <div class="controls">
+                    <button id="prev">Prev</button>
+                    <button id="back10">-10s</button>
+                    <button id="playPause">Play</button>
+                    <button id="forward10">+10s</button>
+                    <button id="next">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="lyrics" id="lyrics">
+            <!-- Lyrics will be displayed here -->
+        </div>
+    </div>
+    <audio id="audio" src=""></audio>
+    <script src="script.js"></script>
+</body>
+</html>
